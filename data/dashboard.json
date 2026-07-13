@@ -1,0 +1,83 @@
+{
+  "application": {
+    "name": "FacilityOps AI",
+    "version": "1.0.0"
+  },
+
+  "user": {
+    "name": "Ankitha",
+    "role": "Facility Manager"
+  },
+
+  "assistant": {
+    "status": "Online"
+  },
+
+  "selectedBuilding": "Head Office",
+
+  "summaryCards": [
+    {
+      "id": "activeModules",
+      "icon": "📦",
+      "value": 4,
+      "label": "Active Modules"
+    },
+    {
+      "id": "efficiencyGain",
+      "icon": "📈",
+      "value": "12.4%",
+      "label": "Efficiency Gain"
+    },
+    {
+      "id": "energySavings",
+      "icon": "⚡",
+      "value": "18.7%",
+      "label": "Energy Savings"
+    },
+    {
+      "id": "costSavings",
+      "icon": "💰",
+      "value": "₹2.45L",
+      "label": "Cost Savings"
+    }
+  ],
+
+  "energyAgent": {
+    "title": "Energy Agent",
+    "description": "Monitors and optimizes energy consumption across facilities using AI insights.",
+
+    "features": [
+      "Energy Monitoring",
+      "HVAC Optimization",
+      "Lighting Optimization",
+      "Demand Forecasting"
+    ],
+
+    "metrics": {
+      "energySavings": "12.4%",
+      "costSavings": "₹1.25L",
+      "forecastAccuracy": "98%"
+    },
+
+    "status": "Running"
+  },
+
+  "workflow": [
+    {
+      "title": "Energy Agent",
+      "description": "Collects energy consumption data from buildings."
+    },
+    {
+      "title": "Maintenance Agent",
+      "description": "Predicts equipment failures and schedules maintenance."
+    },
+    {
+      "title": "Occupancy Agent",
+      "description": "Analyzes occupancy patterns to optimize space usage."
+    },
+    {
+      "title": "Analytics Engine",
+      "description": "Generates insights, recommendations and reports."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual Environment
+venv/
+.venv/
+
+# VS Code
+.vscode/
+
+# Large datasets
+backend/data/train.csv
+
+# OS files
+.DS_Store
+Thumbs.db
+# Environment variables
+backend/.env

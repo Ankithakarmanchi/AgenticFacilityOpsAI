@@ -1,0 +1,80 @@
+{
+    "agent": "Energy Agent",
+
+    "status": "Running",
+
+    "summary": {
+
+        "activeModules": 4,
+
+        "efficiencyGain": "12.4%",
+
+        "energySavings": "18.7%",
+
+        "costSavings": "₹2.45L"
+
+    },
+
+    "metrics": {
+
+        "monthlyEnergySavings": "12.4%",
+
+        "monthlyCostSavings": "₹1.25L",
+
+        "forecastAccuracy": "98%"
+
+    },
+
+    "features": [
+
+        "Energy Monitoring",
+
+        "HVAC Optimization",
+
+        "Lighting Optimization",
+
+        "Demand Forecasting"
+
+    ],
+
+    "chart": {
+
+        "labels": [
+
+            "Mon",
+
+            "Tue",
+
+            "Wed",
+
+            "Thu",
+
+            "Fri",
+
+            "Sat",
+
+            "Sun"
+
+        ],
+
+        "values": [
+
+            78,
+
+            72,
+
+            75,
+
+            69,
+
+            73,
+
+            68,
+
+            66
+
+        ]
+
+    }
+
+}
