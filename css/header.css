@@ -1,0 +1,96 @@
+/* ==========================================
+   Header Styles
+========================================== */
+
+.top-header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:white;
+    padding:20px 25px;
+    border-radius:16px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    margin-bottom:30px;
+
+}
+
+/* ================= Left ================= */
+
+.header-left{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+}
+
+.menu-btn{
+
+    border:none;
+    background:#EEF4FF;
+    width:45px;
+    height:45px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:20px;
+
+}
+
+.header-left input{
+
+    width:420px;
+    padding:12px 15px;
+    border:1px solid #D1D5DB;
+    border-radius:10px;
+    font-size:15px;
+
+}
+
+/* ================= Right ================= */
+
+.header-right{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+}
+
+.icon-btn{
+
+    width:42px;
+    height:42px;
+    border:none;
+    border-radius:10px;
+    background:#EEF4FF;
+    cursor:pointer;
+    font-size:18px;
+
+}
+
+.header-right select{
+
+    padding:10px 15px;
+    border:1px solid #CBD5E1;
+    border-radius:10px;
+
+}
+
+.add-btn{
+
+    background:#2563EB;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:600;
+
+}
+
+.add-btn:hover{
+
+    background:#1D4ED8;
+
+}

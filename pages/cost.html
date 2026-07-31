@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Cost Agent | FacilityOps AI</title>
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/header.css">
+
+    <!-- Reusing Security's card/table styles -->
+    <link rel="stylesheet" href="../css/security.css">
+
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <!-- Sidebar -->
+    <div id="sidebar-container"></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Header -->
+        <div id="header-container"></div>
+
+        <!-- Page Header -->
+        <section class="page-header">
+
+            <h1>Cost Optimization Agent</h1>
+
+            <p>
+                Track operational expenditure against budget across
+                buildings, vendors, and categories.
+            </p>
+
+        </section>
+
+        <!-- KPI Cards -->
+        <section class="security-summary">
+
+            <div class="security-card">
+                <h3>Total Reports</h3>
+                <h2 id="cost-total-reports">--</h2>
+            </div>
+
+            <div class="security-card">
+                <h3>Total Spent</h3>
+                <h2 id="cost-total-spent">--</h2>
+            </div>
+
+            <div class="security-card">
+                <h3>Over Budget Reports</h3>
+                <h2 id="cost-over-budget">--</h2>
+            </div>
+
+            <div class="security-card">
+                <h3>Vendors Engaged</h3>
+                <h2 id="cost-vendors-engaged">--</h2>
+            </div>
+
+        </section>
+
+        <!-- Category Breakdown -->
+        <section class="alert-section">
+
+            <h2>Spend by Category</h2>
+
+            <table class="alert-table">
+
+                <thead>
+
+                    <tr>
+                        <th>Category</th>
+                        <th>Total Amount</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="cost-category-body">
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <!-- AI Recommendations -->
+        <section class="alert-section">
+
+            <h2>AI Cost Recommendations</h2>
+
+            <table class="alert-table">
+
+                <thead>
+
+                    <tr>
+                        <th>Building</th>
+                        <th>Category</th>
+                        <th>Vendor</th>
+                        <th>Variance</th>
+                        <th>Priority</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="cost-recommendations-body">
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="../js/script.js"></script>
+<script src="../js/cost.js"></script>
+
+</body>
+
+</html>

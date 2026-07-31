@@ -1,0 +1,135 @@
+/* ==========================================
+   Sidebar Styles
+========================================== */
+
+.sidebar{
+
+    width:260px;
+    background:#071B4D;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    padding:25px 18px;
+
+}
+
+/* ================= Logo ================= */
+
+.logo h2{
+
+    font-size:28px;
+    margin-bottom:6px;
+
+}
+
+.logo p{
+
+    color:#A8B3CF;
+    margin-bottom:35px;
+    font-size:14px;
+
+}
+
+/* ================= Navigation ================= */
+
+nav ul{
+
+    list-style:none;
+
+}
+
+nav ul li{
+
+    padding:15px;
+    margin-bottom:8px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+    font-size:16px;
+
+}
+
+nav ul li:hover{
+
+    background:#173B8C;
+
+}
+
+.active{
+
+    background:#2962FF;
+
+}
+
+/* ================= AI Assistant ================= */
+
+.assistant-card{
+
+    margin-top:25px;
+    padding:18px;
+    background:#102D73;
+    border-radius:14px;
+
+}
+
+.assistant-card h4{
+
+    margin-bottom:6px;
+
+}
+
+.assistant-card p{
+
+    color:#8EE38E;
+    margin-bottom:15px;
+
+}
+
+.assistant-card button{
+
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:8px;
+    background:#2962FF;
+    color:white;
+    cursor:pointer;
+
+}
+
+/* ================= Profile ================= */
+
+.profile{
+
+    margin-top:20px;
+    padding-top:20px;
+    border-top:1px solid rgba(255,255,255,.2);
+
+}
+
+.profile h4{
+
+    margin-bottom:5px;
+
+}
+
+.profile p{
+
+    color:#BFC7DD;
+    margin-bottom:15px;
+    font-size:14px;
+
+}
+
+.profile button{
+
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:8px;
+    background:#E53935;
+    color:white;
+    cursor:pointer;
+
+}

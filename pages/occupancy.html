@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Occupancy Agent | FacilityOps AI</title>
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/occupancy.css">
+
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <!-- Sidebar -->
+    <div id="sidebar-container"></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Header -->
+        <div id="header-container"></div>
+
+        <!-- Page Header -->
+        <section class="page-header">
+
+            <h1>Occupancy Agent</h1>
+
+            <p>
+                Monitor room occupancy using real sensor data (temperature, humidity,
+                light, and CO2 levels) with AI-powered space usage insights.
+            </p>
+
+        </section>
+
+        <!-- KPI Cards -->
+        <section class="occupancy-summary">
+
+            <div class="summary-card">
+                <h3>Total Records</h3>
+                <h2 id="occupancy-total-records">--</h2>
+            </div>
+
+            <div class="summary-card">
+                <h3>Occupancy Rate</h3>
+                <h2 id="occupancy-rate">--</h2>
+            </div>
+
+            <div class="summary-card">
+                <h3>Occupied Records</h3>
+                <h2 id="occupancy-occupied-records">--</h2>
+            </div>
+
+            <div class="summary-card">
+                <h3>Vacant Records</h3>
+                <h2 id="occupancy-vacant-records">--</h2>
+            </div>
+
+        </section>
+
+        <!-- Environmental Signals -->
+        <section class="occupancy-section">
+
+            <h2>Environmental Signals</h2>
+
+            <table class="occupancy-table">
+
+                <thead>
+
+                    <tr>
+                        <th>Signal</th>
+                        <th>Value</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Avg. CO2 When Occupied</td>
+                        <td id="occupancy-co2-occupied">--</td>
+                    </tr>
+
+                    <tr>
+                        <td>Avg. CO2 When Vacant</td>
+                        <td id="occupancy-co2-vacant">--</td>
+                    </tr>
+
+                    <tr>
+                        <td>Peak CO2 Level</td>
+                        <td id="occupancy-peak-co2">--</td>
+                    </tr>
+
+                    <tr>
+                        <td>Avg. Light When Occupied</td>
+                        <td id="occupancy-avg-light">--</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <!-- AI Recommendations -->
+        <section class="occupancy-section">
+
+            <h2>AI Recommendations</h2>
+
+            <ul class="recommendation-list">
+
+                <li>CO2 levels rise sharply when the room is occupied — consider ventilation triggered by CO2 threshold instead of fixed schedules.</li>
+
+                <li>Light levels correlate with occupancy — automated lighting could reduce energy use during vacant periods.</li>
+
+            </ul>
+
+        </section>
+        <!-- Forecast Model Accuracy -->
+        <section class="occupancy-section">
+
+            <h2>🎯 Occupancy Forecast Model</h2>
+
+            <p id="forecast-method-text" style="color:#6b7280; margin-bottom: 12px;">
+                Loading...
+            </p>
+
+            <table class="occupancy-table">
+
+                <thead>
+
+                    <tr>
+                        <th>Metric</th>
+                        <th>Value</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Accuracy</td>
+                        <td id="forecast-accuracy">--</td>
+                    </tr>
+
+                    <tr>
+                        <td>Precision</td>
+                        <td id="forecast-precision">--</td>
+                    </tr>
+
+                    <tr>
+                        <td>Recall</td>
+                        <td id="forecast-recall">--</td>
+                    </tr>
+
+                    <tr>
+                        <td>Training Records</td>
+                        <td id="forecast-training-records">--</td>
+                    </tr>
+
+                    <tr>
+                        <td>Test Records (real held-out data)</td>
+                        <td id="forecast-test-records">--</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="../js/script.js"></script>
+<script src="../js/occupancy.js"></script>
+
+<

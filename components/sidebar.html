@@ -1,56 +1,120 @@
 <aside class="sidebar">
 
     <!-- Logo -->
-
     <div class="logo">
 
         <h2>FacilityOps AI</h2>
 
-        <p>Agentic Platform</p>
+        <p>Smart Building Platform</p>
 
     </div>
 
     <!-- Navigation -->
-
     <nav>
 
         <ul>
 
-            <li>🏠 Overview</li>
+            <li onclick="location.href='../pages/dashboard.html'">
 
-            <li>📊 Dashboard</li>
+                <i class="fas fa-home"></i>
 
-            <li>🤖 AI Agents</li>
+                <span>Dashboard</span>
 
-            <li class="active">🧩 Modules</li>
+            </li>
 
-            <li>📄 Work Orders</li>
+            <li onclick="location.href='../pages/aiAgents.html'">
 
-            <li>📦 Assets</li>
+                <i class="fas fa-robot"></i>
 
-            <li>📈 Monitoring</li>
+                <span>AI Agents</span>
 
-            <li>📉 Analytics</li>
+            </li>
 
-            <li>📋 Reports</li>
+            <li onclick="location.href='../pages/energy.html'">
 
-            <li>🔔 Alerts</li>
+                <i class="fas fa-bolt"></i>
 
-            <li>📅 Schedules</li>
+                <span>Energy</span>
 
-            <li>🔗 Integrations</li>
+            </li>
 
-            <li>⚙ Settings</li>
+            <li onclick="location.href='../pages/maintenance.html'">
+
+                <i class="fas fa-tools"></i>
+
+                <span>Maintenance</span>
+
+            </li>
+
+            <li onclick="location.href='../pages/occupancy.html'">
+
+                <i class="fas fa-users"></i>
+
+                <span>Occupancy</span>
+
+            </li>
+
+            <li onclick="location.href='../pages/security.html'">
+
+                <i class="fas fa-shield-alt"></i>
+
+                <span>Security</span>
+
+            </li>
+            <li onclick="location.href='../pages/cost.html'">
+
+                <i class="fas fa-coins"></i>
+
+                <span>Cost</span>
+
+            </li>
+            <li onclick="location.href='../pages/executive.html'">
+
+                <i class="fas fa-chart-pie"></i>
+
+                <span>Executive Dashboard</span>
+
+            </li>
+
+            <li>
+
+                <i class="fas fa-chart-line"></i>
+
+                <span>Analytics</span>
+
+            </li>
+
+            <li>
+
+                <i class="fas fa-file-alt"></i>
+
+                <span>Reports</span>
+
+            </li>
+
+            <li>
+
+                <i class="fas fa-cogs"></i>
+
+                <span>Settings</span>
+
+            </li>
 
         </ul>
 
     </nav>
 
     <!-- AI Assistant -->
-
     <div class="assistant-card">
 
-        <h4>AI Assistant</h4>
+        <h4>
+
+            <i class="fas fa-circle"
+               style="color:#22C55E;font-size:10px;"></i>
+
+            AI Assistant
+
+        </h4>
 
         <p>Online</p>
 
@@ -63,8 +127,11 @@
     </div>
 
     <!-- Logged-in User -->
-
     <div class="profile">
+
+        <img
+            src="https://ui-avatars.com/api/?name=Facility+Manager&background=2563EB&color=ffffff"
+            alt="Profile">
 
         <h4 id="user-name">
 
@@ -84,6 +151,6 @@
 
         </button>
 
-    </div>
+    </div>   
 
 </aside>

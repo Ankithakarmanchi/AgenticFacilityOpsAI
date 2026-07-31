@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Energy Agent | FacilityOps AI</title>
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/energy.css">
+    <link rel="stylesheet" href="../css/energy.css">
+    <link rel="stylesheet" href="../css/security.css">
+
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <!-- Sidebar -->
+    <div id="sidebar-container"></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Header -->
+        <div id="header-container"></div>
+
+        <!-- Energy Agent -->
+        <div id="energy-agent-container"></div>
+
+        <!-- AI Recommendations -->
+        <div id="recommendations-container"></div>
+        <!-- Anomaly Detection -->
+        <section class="alert-section" style="margin-top: 24px;">
+
+            <h2>🔍 Anomaly Detection</h2>
+
+            <p style="color:#6b7280; margin-bottom: 12px;" id="anomaly-method-text">
+                Loading...
+            </p>
+
+            <div class="security-summary" style="margin-bottom: 16px;">
+
+                <div class="security-card">
+                    <h3>Accuracy</h3>
+                    <h2 id="anomaly-accuracy">--</h2>
+                </div>
+
+                <div class="security-card">
+                    <h3>Precision</h3>
+                    <h2 id="anomaly-precision">--</h2>
+                </div>
+
+                <div class="security-card">
+                    <h3>Recall</h3>
+                    <h2 id="anomaly-recall">--</h2>
+                </div>
+
+                <div class="security-card">
+                    <h3>Anomalies Found</h3>
+                    <h2 id="anomaly-count">--</h2>
+                </div>
+
+            </div>
+
+            <table class="alert-table">
+
+                <thead>
+
+                    <tr>
+                        <th>Building</th>
+                        <th>Meter</th>
+                        <th>Timestamp</th>
+                        <th>Reading</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="anomaly-sample-body">
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="../js/script.js"></script>
+<script src="../js/energy.js"></script>
+<!-- Global CSS -->
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/sidebar.css">
+<link rel="stylesheet" href="../css/header.css">
+<link rel="stylesheet" href="../css/dashboard.css">
+<link rel="stylesheet" href="../css/energy.css">
+</body>
+
+</html>

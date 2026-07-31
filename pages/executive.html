@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Executive Dashboard | FacilityOps AI</title>
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/security.css">
+
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <!-- Sidebar -->
+    <div id="sidebar-container"></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Header -->
+        <div id="header-container"></div>
+
+        <!-- Page Header -->
+        <section class="page-header">
+
+            <h1>Executive Dashboard</h1>
+
+            <p>
+                Aggregated facility intelligence across all 5 AI agents,
+                with a computed overall facility health score.
+            </p>
+
+        </section>
+
+        <!-- Facility Health Score -->
+        <section class="security-summary">
+
+            <div class="security-card">
+                <h3>Facility Health Score</h3>
+                <h2 id="fi-health-score">--</h2>
+            </div>
+
+            <div class="security-card">
+                <h3>Maintenance Score</h3>
+                <h2 id="fi-score-maintenance">--</h2>
+            </div>
+
+            <div class="security-card">
+                <h3>Security Score</h3>
+                <h2 id="fi-score-security">--</h2>
+            </div>
+
+            <div class="security-card">
+                <h3>Cost Score</h3>
+                <h2 id="fi-score-cost">--</h2>
+            </div>
+
+            <div class="security-card">
+                <h3>Occupancy Score</h3>
+                <h2 id="fi-score-occupancy">--</h2>
+            </div>
+
+            <div class="security-card">
+                <h3>Energy Score</h3>
+                <h2 id="fi-score-energy">--</h2>
+            </div>
+
+        </section>
+
+        <!-- Score Breakdown -->
+        <section class="alert-section">
+
+            <h2>Score Breakdown & Weights</h2>
+
+            <p style="color:#6b7280; margin-bottom: 12px;">
+                Facility Health Score is a transparent, rule-based weighted
+                average — not a trained ML model. Weights are shown below.
+            </p>
+
+            <table class="alert-table">
+
+                <thead>
+
+                    <tr>
+                        <th>Agent</th>
+                        <th>Score (0-100)</th>
+                        <th>Weight</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="fi-breakdown-body">
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <!-- Cross-Agent Summary -->
+        <section class="alert-section">
+
+            <h2>Cross-Agent Summary</h2>
+
+            <table class="alert-table">
+
+                <thead>
+
+                    <tr>
+                        <th>Agent</th>
+                        <th>Status</th>
+                        <th>Key Metric</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="fi-agents-body">
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="../js/script.js"></script>
+<script src="../js/executive.js"></script>
+
+</body>
+
+</html>

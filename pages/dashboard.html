@@ -10,8 +10,18 @@
 
     <title>FacilityOps AI Dashboard</title>
 
-    <!-- Dashboard Styles -->
+    <!-- Global Styles -->
+    <link rel="stylesheet"
+          href="../css/style.css">
 
+    <!-- Shared Layout -->
+    <link rel="stylesheet"
+          href="../css/sidebar.css">
+
+    <link rel="stylesheet"
+          href="../css/header.css">
+
+    <!-- Dashboard Styles -->
     <link rel="stylesheet"
           href="../css/dashboard.css">
 
@@ -19,48 +29,36 @@
 
 <body>
 
-    <!-- ================= Dashboard ================= -->
+<div class="dashboard-container">
 
-    <div class="dashboard-container">
+    <!-- Sidebar -->
+    <div id="sidebar-container"></div>
 
-        <!-- Sidebar Component -->
+    <!-- Main Content -->
+    <main class="main-content">
 
-        <div id="sidebar-container"></div>
+        <!-- Header -->
+        <div id="header-container"></div>
 
-        <!-- Main Content -->
+        <!-- KPI Cards -->
+        <div id="summary-cards-container"></div>
 
-        <main class="main-content">
+        <!-- Workflow -->
+        <div id="workflow-container"></div>
 
-            <!-- Header -->
+    </main>
 
-            <div id="header-container"></div>
+</div>
 
-            <!-- KPI Cards -->
+<script defer
+        src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-            <div id="summary-cards-container"></div>
+<script defer
+        src="../js/script.js"></script>
 
-            <!-- Energy Agent -->
-
-            <div id="energy-agent-container"></div>
-
-            <!-- AI Workflow -->
-
-            <div id="workflow-container"></div>
-
-        </main>
-
-    </div>
-
-    <!-- External Libraries -->
-
-    <script defer
-            src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-    <!-- Dashboard Logic -->
-
-    <script defer
-            src="../js/dashboard.js"></script>
+<script defer
+        src="../js/dashboard.js"></script>
 
 </body>
 
-</html>
+</html>  

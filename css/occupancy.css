@@ -1,0 +1,122 @@
+/* ==========================================
+   Occupancy Page
+========================================== */
+.page-header{
+    margin-bottom:30px;
+}
+.page-header h1{
+    font-size:34px;
+    margin-bottom:10px;
+}
+.page-header p{
+    color:#64748B;
+}
+.occupancy-summary{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    margin-bottom:30px;
+}
+.summary-card{
+    background:#FFFFFF;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+.summary-card h3{
+    color:#64748B;
+    margin-bottom:10px;
+}
+.summary-card h2{
+    color:#2563EB;
+    font-size:34px;
+}
+.occupancy-chart{
+    background:#FFFFFF;
+    padding:30px;
+    border-radius:18px;
+    margin-bottom:30px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+.chart-placeholder{
+    height:350px;
+    border:2px dashed #CBD5E1;
+    border-radius:12px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-top:20px;
+}
+.room-table{
+    background:#FFFFFF;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+.room-table table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+.room-table th{
+    background:#EEF4FF;
+    padding:15px;
+    text-align:left;
+}
+.room-table td{
+    padding:15px;
+    border-bottom:1px solid #E5E7EB;
+}
+
+/* ==========================================
+   Occupancy Section (used by Environmental
+   Signals + Forecast Model blocks)
+========================================== */
+.occupancy-section{
+    background:#FFFFFF;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    margin-bottom:30px;
+}
+.occupancy-section h2{
+    font-size:22px;
+    margin-bottom:10px;
+}
+
+.occupancy-table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:16px;
+}
+.occupancy-table thead tr{
+    background:#EEF4FF;
+}
+.occupancy-table th{
+    padding:14px 16px;
+    text-align:left;
+    color:#1E293B;
+    font-weight:600;
+}
+.occupancy-table td{
+    padding:14px 16px;
+    border-bottom:1px solid #E5E7EB;
+    color:#334155;
+}
+.occupancy-table tbody tr:last-child td{
+    border-bottom:none;
+}
+
+.recommendation-list{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+.recommendation-list li{
+    padding:12px 16px;
+    background:#F8FAFC;
+    border-left:4px solid #2563EB;
+    border-radius:8px;
+    margin-bottom:10px;
+    color:#334155;
+}

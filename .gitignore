@@ -9,11 +9,14 @@ venv/
 # VS Code
 .vscode/
 
-# Large datasets
-backend/data/train.csv
-
+# Datasets and generated data files
+backend/data/*
+!backend/data/building_metadata.csv
 # OS files
 .DS_Store
 Thumbs.db
 # Environment variables
 backend/.env
+# Temporary/generated project files
+project-files.txt
+project-tree.txt

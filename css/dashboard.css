@@ -3,325 +3,20 @@
    Dashboard Styles
 ========================================== */
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
-}
-
-body{
-    background:#F5F7FB;
-}
 
 .dashboard-container{
     display:flex;
     min-height:100vh;
 }
 
-/* ================= Sidebar ================= */
 
-.sidebar{
-
-    width:260px;
-
-    background:#071B4D;
-
-    color:white;
-
-    display:flex;
-
-    flex-direction:column;
-
-    justify-content:space-between;
-
-    padding:25px 18px;
-
-}
-
-.logo h2{
-
-    font-size:28px;
-
-    margin-bottom:6px;
-
-}
-
-.logo p{
-
-    color:#A8B3CF;
-
-    margin-bottom:35px;
-
-    font-size:14px;
-
-}
-
-/* Navigation */
-
-nav ul{
-
-    list-style:none;
-
-}
-
-nav ul li{
-
-    padding:15px;
-
-    margin-bottom:8px;
-
-    border-radius:10px;
-
-    cursor:pointer;
-
-    transition:.3s;
-
-    font-size:16px;
-
-}
-
-nav ul li:hover{
-
-    background:#173B8C;
-
-}
-
-.active{
-
-    background:#2962FF;
-
-}
-
-/* AI Assistant */
-
-.assistant-card{
-
-    margin-top:25px;
-
-    padding:18px;
-
-    background:#102D73;
-
-    border-radius:14px;
-
-}
-
-.assistant-card h4{
-
-    margin-bottom:6px;
-
-}
-
-.assistant-card p{
-
-    color:#8EE38E;
-
-    margin-bottom:15px;
-
-}
-
-.assistant-card button{
-
-    width:100%;
-
-    padding:10px;
-
-    border:none;
-
-    border-radius:8px;
-
-    background:#2962FF;
-
-    color:white;
-
-    cursor:pointer;
-
-}
-
-/* Profile */
-
-.profile{
-
-    margin-top:20px;
-
-    padding-top:20px;
-
-    border-top:1px solid rgba(255,255,255,.2);
-
-}
-
-.profile h4{
-
-    margin-bottom:5px;
-
-}
-
-.profile p{
-
-    color:#BFC7DD;
-
-    margin-bottom:15px;
-
-    font-size:14px;
-
-}
-
-.profile button{
-
-    width:100%;
-
-    padding:10px;
-
-    border:none;
-
-    border-radius:8px;
-
-    background:#E53935;
-
-    color:white;
-
-    cursor:pointer;
-
-}
-
-/* ================= Main Content ================= */
 
 .main-content{
 
     flex:1;
-
     background:#F8FAFC;
-
     padding:30px;
-
     overflow-y:auto;
-
-}
-
-/* ================= Header ================= */
-
-.top-header{
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    background:white;
-
-    padding:20px 25px;
-
-    border-radius:16px;
-
-    box-shadow:0 5px 15px rgba(0,0,0,.08);
-
-    margin-bottom:30px;
-
-}
-
-.header-left{
-
-    display:flex;
-
-    align-items:center;
-
-    gap:15px;
-
-}
-
-.menu-btn{
-
-    border:none;
-
-    background:#EEF4FF;
-
-    width:45px;
-
-    height:45px;
-
-    border-radius:10px;
-
-    cursor:pointer;
-
-    font-size:20px;
-
-}
-
-.header-left input{
-
-    width:420px;
-
-    padding:12px 15px;
-
-    border:1px solid #D1D5DB;
-
-    border-radius:10px;
-
-    font-size:15px;
-
-}
-
-.header-right{
-
-    display:flex;
-
-    align-items:center;
-
-    gap:15px;
-
-}
-
-.icon-btn{
-
-    width:42px;
-
-    height:42px;
-
-    border:none;
-
-    border-radius:10px;
-
-    background:#EEF4FF;
-
-    cursor:pointer;
-
-    font-size:18px;
-
-}
-
-.header-right select{
-
-    padding:10px 15px;
-
-    border:1px solid #CBD5E1;
-
-    border-radius:10px;
-
-}
-
-.add-btn{
-
-    background:#2563EB;
-
-    color:white;
-
-    border:none;
-
-    padding:12px 20px;
-
-    border-radius:10px;
-
-    cursor:pointer;
-
-    font-weight:600;
-
-}
-
-.add-btn:hover{
-
-    background:#1D4ED8;
 
 }
 /* ================= Summary Cards ================= */
@@ -715,5 +410,348 @@ nav ul li:hover{
     color:#2563EB;
 
     font-weight:bold;
+
+}
+/* ================= Recommendations ================= */
+
+.recommendations-section{
+    background:#FFFFFF;
+    border-radius:18px;
+    padding:30px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    margin-bottom:30px;
+}
+
+.recommendations-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    margin-bottom:22px;
+    gap:20px;
+}
+
+.recommendations-header h2{
+    color:#0F172A;
+    margin-bottom:8px;
+}
+
+.recommendations-header p{
+    color:#64748B;
+    font-size:14px;
+    max-width:520px;
+    line-height:1.5;
+}
+
+.rec-count-badge{
+    background:#EEF4FF;
+    color:#2563EB;
+    padding:8px 16px;
+    border-radius:20px;
+    font-weight:600;
+    font-size:14px;
+    white-space:nowrap;
+}
+
+.recommendations-list{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+}
+
+.rec-loading{
+    color:#94A3B8;
+}
+
+.rec-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+    padding:18px 20px;
+    background:#F8FAFC;
+    border-radius:14px;
+    border-left:4px solid #2563EB;
+}
+
+.rec-item-left{
+    flex:1;
+}
+
+.rec-item-title{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:6px;
+}
+
+.rec-item-title h4{
+    color:#0F172A;
+    font-size:16px;
+}
+
+.rec-meter-badge{
+    background:#DCFCE7;
+    color:#15803D;
+    padding:3px 10px;
+    border-radius:12px;
+    font-size:12px;
+    font-weight:600;
+}
+
+.rec-item-text{
+    color:#64748B;
+    font-size:14px;
+    line-height:1.5;
+}
+
+.rec-item-right{
+    text-align:right;
+    flex-shrink:0;
+}
+
+.rec-savings-label{
+    color:#64748B;
+    font-size:12px;
+    margin-bottom:4px;
+}
+
+.rec-savings-value{
+    color:#15803D;
+    font-size:20px;
+    font-weight:700;
+}
+/* ================= Maintenance Agent ================= */
+
+.maintenance-section{
+
+    background:#FFFFFF;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    margin-bottom:30px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.maintenance-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:30px;
+
+}
+
+.maintenance-header h2{
+
+    color:#0F172A;
+
+    margin-bottom:8px;
+
+}
+
+.maintenance-header p{
+
+    color:#64748B;
+
+    font-size:15px;
+
+}
+
+.maintenance-status{
+
+    background:#DCFCE7;
+
+    color:#15803D;
+
+    padding:10px 18px;
+
+    border-radius:25px;
+
+    font-weight:600;
+
+}
+
+.maintenance-summary{
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:18px;
+
+    margin-bottom:30px;
+
+}
+
+.maintenance-card{
+
+    background:#F8FAFC;
+
+    border:1px solid #E5E7EB;
+
+    border-radius:16px;
+
+    padding:22px;
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+.maintenance-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.maintenance-card h4{
+
+    color:#64748B;
+
+    font-size:15px;
+
+    margin-bottom:15px;
+
+}
+
+.maintenance-card h2{
+
+    color:#2563EB;
+
+    font-size:36px;
+
+}
+
+.maintenance-grid{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:25px;
+
+}
+
+.maintenance-panel{
+
+    background:#F8FAFC;
+
+    border-radius:16px;
+
+    padding:22px;
+
+}
+
+.maintenance-panel h3{
+
+    color:#0F172A;
+
+    margin-bottom:18px;
+
+}
+
+.maintenance-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.maintenance-table th{
+
+    background:#EEF4FF;
+
+    padding:14px;
+
+    text-align:left;
+
+    color:#0F172A;
+
+}
+
+.maintenance-table td{
+
+    padding:14px;
+
+    border-bottom:1px solid #E5E7EB;
+
+}
+
+.maintenance-table tr:hover{
+
+    background:#FFFFFF;
+
+}
+
+#maintenance-recommendations{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+#maintenance-recommendations li{
+
+    background:#FFFFFF;
+
+    border-left:4px solid #2563EB;
+
+    padding:14px 16px;
+
+    margin-bottom:12px;
+
+    border-radius:10px;
+
+    color:#334155;
+
+    line-height:1.6;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.05);
+
+}
+
+@media(max-width:1100px){
+
+    .maintenance-summary{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .maintenance-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:700px){
+
+    .maintenance-summary{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .maintenance-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:15px;
+
+    }
 
 }

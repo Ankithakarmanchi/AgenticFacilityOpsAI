@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Security Agent | FacilityOps AI</title>
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/security.css">
+
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <!-- Sidebar -->
+    <div id="sidebar-container"></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Header -->
+        <div id="header-container"></div>
+
+        <!-- Page Header -->
+        <section class="page-header">
+
+            <h1>Security Agent</h1>
+
+            <p>
+                Monitor access control events, unauthorized attempts, and
+                severity trends from real facility access logs.
+            </p>
+
+        </section>
+
+        <!-- KPI Cards -->
+        <section class="security-summary">
+
+            <div class="security-card">
+                <h3>Total Events</h3>
+                <h2 id="security-total-events">--</h2>
+            </div>
+
+            <div class="security-card">
+                <h3>Buildings Monitored</h3>
+                <h2 id="security-buildings-monitored">--</h2>
+            </div>
+
+            <div class="security-card">
+                <h3>Unique Employees</h3>
+                <h2 id="security-unique-employees">--</h2>
+            </div>
+
+            <div class="security-card">
+                <h3>Unauthorized Attempts</h3>
+                <h2 id="security-unauthorized-attempts">--</h2>
+            </div>
+
+        </section>
+
+        <!-- Severity Breakdown -->
+        <section class="alert-section">
+
+            <h2>Severity Breakdown</h2>
+
+            <table class="alert-table">
+
+                <thead>
+
+                    <tr>
+                        <th>Severity</th>
+                        <th>Count</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="security-severity-body">
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <!-- Live Alerts -->
+        <section class="alert-section">
+
+            <h2>Live Security Alerts</h2>
+
+            <table class="alert-table">
+
+                <thead>
+
+                    <tr>
+                        <th>Time</th>
+                        <th>Building</th>
+                        <th>Zone</th>
+                        <th>Door</th>
+                        <th>Severity</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="security-alerts-body">
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="../js/script.js"></script>
+<script src="../js/security.js"></script>
+
+</body>
+
+</html>
